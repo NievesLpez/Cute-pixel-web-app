@@ -1,0 +1,193 @@
+/* Estilos base */
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #cde9f4;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.cebolla {
+    background: url('assets/main-bg.jpg') center/cover no-repeat;
+    color: #000000;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.cebolla:before, .cebolla:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 25px;
+}
+
+.cebolla:before {
+    top: 0;
+    background-color: #a9d5f0;
+}
+
+.cebolla:after {
+    bottom: 0;
+    background-color: #c1e6fc;
+}
+
+.cebolla h1 { 
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cebolla h2 {
+    font-weight: normal;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    margin: 0;
+}
+
+/* Navegación */
+.filter-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.filter-nav a {
+    color: #330779;
+    padding: 12px 20px;
+    background-color: #c8f2fe;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.filter-nav .active {
+    background-color:#a2dcf7;
+}
+
+.filter-nav .active:hover {
+    background-color:#a2dcf7;
+    cursor: default; #no se mueve cuando pasas por encima
+}
+
+.filter-nav a:hover {
+    background-color: #a9d5f0;
+    transform: translateY(-2px);
+}
+
+.products {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.products-card {
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: hwb(278 69% 18% / 0.82);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.product-card-photo {
+    order: 1;
+    grid-row: 1;
+    overflow: hidden;
+    height: 200px; 
+}
+
+.product-card-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.products-card:hover .product-card-photo img {
+    transform: scale(1.1);
+}
+
+.products-card-text {
+    order: 2;
+    font-size: rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px; 
+}
+
+/* Añade estos estilos nuevos */
+.product-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .products-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card-photo {
+        height: 250px;
+        order: 0;
+    }
+    
+    .cebolla h1 {
+        font-size: 4rem;
+    }
+}
+
+.products-card-text small{
+    color: #351616;
+}
+
+.primary-btn {
+    background: linear-gradient(to bottom, #a14d9d, #430a56);
+    padding: 8px 16px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 270px; 
+    margin-bottom: 10px; 
+    width: fit-content;
+  
+}
+
+/* Efecto hover más sutil */
+.primary-btn:hover {
+    background: linear-gradient(to bottom, #ffbce2, #4a2d2d);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px); 
+}
+
+
+@media screen and (min-width: 768px) {
+    .products-card {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .cebolla h1 {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    }
+}

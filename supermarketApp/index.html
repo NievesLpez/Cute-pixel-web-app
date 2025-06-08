@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cebolla">
+        <h1>Supermercado</h1>
+        <h2>¿Qué desea comprar hoy?</h2>
+    </div>
+
+    <div class="filter-nav">
+        <a href="#" data-filter = "all">Productos</a>
+        <a href="#"data-filter = "verdura">Verduras</a>
+        <a href="#"data-filter = "fruta">Frutas</a>
+        <a href="#"data-filter = "carne">Carnes</a>
+        <a href="#"data-filter = "pescado">Pescados</a>
+    </div>
+
+    <div class="products" id="products-container"></div>
+
+    <template id="products-card">
+        <div class="products-card">
+            <div class="products-card-text">
+                <h3 class="product-title">Berenjenas</h3>
+                <small><span class="color">Morado</span> - <span class="type">Vegetal</span></small>
+                <p class="description">Berenjenas jugosas y resplandecientes para tus platos.</p>
+                <a href="#" class="primary-btn">Comprar berenjenas</a>
+            </div>
+            <div class="product-card-photo">
+                <img src="assets/berenjena.jpg" alt="Berenjena" class="product-image">
+            </div>
+        </div>
+    </template>
+</body>
+</html>
