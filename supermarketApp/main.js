@@ -1,3 +1,14 @@
+/*
+Name: Supermarket App
+Author: Nieves Yashuang Lopez
+Date: May 2025
+Version: 1.0
+
+Description:
+Simple supermarket web app with cute pixel art and dynamic functionalities. Includes index and buttons.
+*/
+
+
 const products = [
     {
         image: "assets/berenjena.jpg",
