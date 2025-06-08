@@ -10,7 +10,7 @@
 
 ## Description:
 
-Simple supermarket web app with cute pixel art and dynamic functionalities. Includes index and buttons.
+Simple supermarket web app with cute pixel art and interactive functionalities. Includes index and buttons.
 
 ---
 
