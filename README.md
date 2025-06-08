@@ -1,7 +1,16 @@
 # cute-pixel-web-app
 
-## Supermarket web page with interactive buttons and index. 
-> First frontend test with Html, Css and JavaScript
+- Name: Supermarket App
+
+- Author: Nieves Yashuang Lopez
+
+- Date: May 2025
+
+- Version: 1.0
+
+## Description:
+
+Simple supermarket web app with cute pixel art and dynamic functionalities. Includes index and buttons.
 
 ---
 
