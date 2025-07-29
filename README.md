@@ -6,11 +6,9 @@
 
 - Date: May 2025
 
-- Version: 1.0
-
 ## Description:
 
-Simple supermarket web app with cute pixel art and interactive functionalities. Includes index and buttons.
+Simple supermarket web app with cute pixel art and interactive functionalities. Includes index and buttons. My first approach to web dev, personal project.
 
 ---
 
