@@ -1,4 +1,4 @@
-/* Estilos base */
+/* Estilo base */
 html, body {
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Encabezado */
+/* Titulo */
 .cebolla {
     background: url('assets/main-bg.jpg') center/cover no-repeat;
     color: #000000;
@@ -51,7 +51,7 @@ body {
     margin: 0;
 }
 
-/* Navegación */
+/* Filtro */
 .filter-nav {
     display: flex;
     justify-content: center;
@@ -129,14 +129,13 @@ body {
     margin-left: 30px; 
 }
 
-/* Añade estos estilos nuevos */
+/* Movimiento extra */
 .product-image-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     .products-card {
         grid-template-columns: 1fr;
@@ -174,7 +173,7 @@ body {
   
 }
 
-/* Efecto hover más sutil */
+/* Hover */
 .primary-btn:hover {
     background: linear-gradient(to bottom, #ffbce2, #4a2d2d);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
