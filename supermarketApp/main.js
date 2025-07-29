@@ -2,10 +2,6 @@
 Name: Supermarket App
 Author: Nieves Yashuang Lopez
 Date: May 2025
-Version: 1.0
-
-Description:
-Simple supermarket web app with cute pixel art and dynamic functionalities. Includes index and buttons.
 */
 
 
@@ -82,10 +78,10 @@ const products = [
     const cartImage = "assets/money.gif";
     const resetDelay = 2000;
 
-    // Render all products initially
+    // Show products
     renderProducts(products);
 
-    // Set up filter buttons
+    // Filter
     const filterButtons = document.querySelectorAll(".filter-nav a");
     filterButtons.forEach(button => {
         button.addEventListener("click", handleFilterClick);
@@ -99,7 +95,7 @@ const products = [
             const productImg = clone.querySelector('.product-image');
             const productButton = clone.querySelector('.primary-btn');
             
-            // Set product data
+            // Datos de prod
             productImg.src = product.image;
             productImg.alt = product.title;
             productButton.textContent = product.price;
@@ -108,11 +104,11 @@ const products = [
             clone.querySelector('.type').textContent = product.type;
             clone.querySelector('.description').textContent = product.description;
 
-            // Add to cart effect
+            // Add to cart
             productButton.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                // Visual feedback
+                // Responsive button
                 const originalImage = productImg.src;
                 const originalText = productButton.textContent;
                 
@@ -135,7 +131,7 @@ const products = [
         e.preventDefault();
         const filterValue = e.currentTarget.dataset.filter;
         
-        // Update active button
+        // Update button again
         filterButtons.forEach(btn => btn.classList.remove("active"));
         e.currentTarget.classList.add("active");
         
